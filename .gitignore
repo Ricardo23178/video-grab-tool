@@ -1,0 +1,17 @@
+.work/
+.session/
+.tools/
+__pycache__/
+tests/.temp/
+*.pyc
+
+下载内容/
+分享包/
+links.txt
+
+视频下载工具.exe
+
+.venv/
+venv/
+*.log
+.DS_Store

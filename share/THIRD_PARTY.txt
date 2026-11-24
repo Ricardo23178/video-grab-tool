@@ -1,0 +1,27 @@
+第三方组件说明
+
+本包内置 Python 3.13.16 Windows embeddable package (64-bit)，由 Python Software Foundation 发布。
+官方页面：https://www.python.org/downloads/release/python-31316/
+官方文档：https://docs.python.org/3.13/using/windows.html#the-embeddable-package
+下载地址：https://www.python.org/ftp/python/3.13.16/python-3.13.16-embed-amd64.zip
+原始 ZIP SHA256：97dae5274cc54867065e8d5a3226e48c35017ed332a0fdb0e27d5b5821961297
+许可证及 Python 附带组件声明原样保存在 .runtime\LICENSE.txt。
+仅调整 .runtime\python313._pth，增加父目录到模块查找路径，以加载项目源码；不修改 Python 二进制。
+
+以下组件不在原始分享包中，会在使用者首次运行时从上游下载并校验：
+
+1. imageio-ffmpeg 0.6.0 中的 FFmpeg Windows x64 可执行文件
+   官方发布：https://pypi.org/project/imageio-ffmpeg/0.6.0/
+   项目与许可证：https://github.com/imageio/imageio-ffmpeg
+   FFmpeg 项目：https://ffmpeg.org/
+   FFmpeg 及其编译组件适用各自许可证，参见上游说明。
+
+2. BBDownNext v2.3.0 Windows x64，MIT License
+   官方发布：https://github.com/KaiHuaDou/BBDownNext/releases/tag/v2.3.0
+   项目与许可证：https://github.com/KaiHuaDou/BBDownNext
+   下载文件 SHA256：d9e75a7196ba28a77a7bcbca7408748e8efe42a52a81e5890bde5bbf7d952890
+
+本工具使用电脑已安装的 Chrome 或 Edge，不在包内分发浏览器。
+窗口使用 Windows 自带的 .NET Framework / Windows Forms，不在包内分发 .NET 运行时或其他界面框架。
+窗口框架来源：https://github.com/dotnet/winforms
+文件校验.json 记录包内文件的 SHA256，用于检查意外损坏；不等同于软件签名。
